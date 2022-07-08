@@ -1,9 +1,10 @@
 """Wordle with a specific number of tries."""
-__author__: "730480319" 
+__author__ = "730480319" 
 
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
+
 
 def contains_char(word: str, letter: str) -> bool:
     """Check if the letter is in the secret word."""
@@ -35,15 +36,17 @@ def emojified(guess: str, secret: str) -> str:
         i = i + 1
     return result
 
+
 def input_guess(length: int) -> str:
     """Keeps track of the secret words length."""
-    guess = input(f"What is your {length}-letter guess? ")
+    guess = input(f"Enter a {length} character word: ")
     while len(guess) != length:
-        guess = input(f"That was not {length} letters! Try again: ")
+        guess = input(f"That wasn't {length} chars! Try again: ")
     return guess
 
+
 def main() -> None:
-    """The entrypoint of the program and main game loop"""
+    """The entrypoint of the program and main game loop."""
     turns = 0
     won = False
     secret = "codes"

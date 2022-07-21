@@ -1,4 +1,5 @@
 """Dictionary related utility functions."""
+<<<<<<< HEAD
 __author__ = "730480319"
 
 from csv import DictReader
@@ -81,3 +82,9 @@ def count(freq: list[str]) -> dict[str, int]:
         else:  # Item not found in the dict, so assign it 1
             result[i] = 1
     return result
+=======
+
+__author__ = ""
+
+# Define your functions below
+>>>>>>> 557f419c9c715d5f240260899912db16331a74ae
